@@ -1,0 +1,40 @@
+POST /api/duplicate-role?source=account-settings HTTP/1.1
+Host: 127.0.0.1:5000
+User-Agent: Mozilla/5.0 PastelParse-Demo/1.0
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer demo-user-access-token
+Cookie: session=demo-session-8f712c; active_tenant=alpha
+X-CSRF-Token: demo-csrf-token-42a719
+X-Tenant-ID: alpha
+X-Request-ID: pastelparse-demo-20260812-001
+Origin: http://127.0.0.1:5000
+Referer: http://127.0.0.1:5000/account/settings
+Connection: close
+
+{
+  "userId": "usr_10482",
+  "tenantId": "alpha",
+  "email": "alex@example.test",
+  "displayName": "Alex Morgan",
+  "role": "user",
+  "department": "engineering",
+  "profile": {
+    "jobTitle": "Application Security Engineer",
+    "location": "Singapore",
+    "timezone": "Asia/Singapore"
+  },
+  "preferences": {
+    "emailNotifications": true,
+    "securityAlerts": true,
+    "theme": "dark"
+  },
+  "requestedScopes": [
+    "profile:read",
+    "profile:write"
+  ],
+  "metadata": {
+    "source": "account-settings",
+    "clientVersion": "1.4.2"
+  }
+}

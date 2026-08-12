@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.venv/
+pastelparse_report_*.json
+lab/reports/
